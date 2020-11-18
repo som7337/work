@@ -1,0 +1,89 @@
+body{ background: #fff;}
+
+#header > ul > li > a{
+  color: #1a2960;
+}
+
+#nav > ul > li > a{
+  color: #1a2960;
+}
+
+/*work_title style*/
+#work_title{
+  position: relative;
+  margin-left: 250px;
+  margin-top: 10%;
+}
+
+#work_title > #maintitle{
+  font-size: 200px;
+  line-height: 260px;
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+  letter-spacing: -3px;
+  color: #1a2960;
+}
+
+#work_title > #subtitle{
+  display: inline-block;
+  margin-top: -50px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #1a2960;
+  letter-spacing: 1px;
+}
+
+/*wkill_btn style*/
+#skill_btn{
+  margin-left: 250px;
+}
+
+#skill_btn ul {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#skill_btn ul li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 70px;
+  background: #1a2960;
+}
+
+#skill_btn ul li a{
+  color: #fff;
+}
+
+/*area style*/
+.work_area{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /*요소의 사이즈가 줄어들때 밑으로 내려보낼수있음, 안하면 일렬로 정렬됨*/
+  margin-left: 250px;
+  width: calc(100% - 250px);
+  box-sizing: border-box;
+  background-size: cover;
+}
+
+.work_area .column{
+  flex: 23%;
+  margin: 0 2% 4% 0;
+}
+
+.work_area .column img{
+  width: 100%;
+  background-size: cover;
+}
+
+.work_area .column h3{
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-top: 15px;
+}
