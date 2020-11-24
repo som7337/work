@@ -88,18 +88,28 @@ h1,h2,h3,h4,h5,h6{ line-height: 1; }
 #mainbanner > #maintitle > ul > li{
   position: relative;
   overflow: hidden;
-  height: 140px;
-  line-height: 140px;
+  height: 11.5rem;
+  line-height: 11.5rem;
+}
+
+#mainbanner > #maintitle > ul > li:nth-of-type(1){
+  height: 11rem;
+  line-height: 11rem;
+}
+
+#mainbanner > #maintitle > ul > li:nth-of-type(4){
+  height: 10rem;
+  line-height: 10rem;
 }
 
 #mainbanner > #maintitle > ul > li > p{
-  height: 140px;
-  line-height: 140px;
+  width: 100vw;
+
   position: absolute;
   bottom: -140px;
   color: #fff;
   font-family: 'EB Garamond', serif;
-  font-size: 120px;
+  font-size: 10.5rem;
   letter-spacing: 5px;
   animation: fmex 5s;
   animation-fill-mode :forwards; //효과를 종료된후 유지되는것.
@@ -107,8 +117,8 @@ h1,h2,h3,h4,h5,h6{ line-height: 1; }
 }
 
 @keyframes fmex {
-  from {bottom: -150px;}
-  to {bottom: 15px;}
+  from {bottom: -10rem;}
+  to {bottom: 1rem;}
 }
 
 #mainbanner > #maintitle > ul > li:nth-of-type(){
@@ -132,7 +142,7 @@ h1,h2,h3,h4,h5,h6{ line-height: 1; }
   font-weight: 400;
   letter-spacing: 3px;
   margin-left: 250px;
-  margin-top: 70px;
+  margin-top: 50px;
 }
 
 #mainbanner > #subtitle > span{
