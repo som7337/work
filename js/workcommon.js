@@ -20,10 +20,9 @@ function autoType(elementClass,typingSpeed){
       })(i+1,thisTextSplit[i]);
     };
   },1500);
-
 }
 
 $(function(){
   //script 입력영역 object
-  autoType(".section_maint_slide",200); //0.2초마다
+  autoType("#maintitle",200); //0.2초마다
 });

@@ -15,23 +15,55 @@ body{ background: #fff;}
   margin-top: 10%;
 }
 
-#work_title > #maintitle{
-  font-size: 200px;
-  line-height: 260px;
+#work_title #maintitle{
+  font-size: 190px;
+  height: 200px;
   font-family: 'EB Garamond', serif;
   font-weight: 400;
   letter-spacing: -3px;
   color: #1a2960;
 }
 
-#work_title > #subtitle{
+#work_title #maintitle h1{
   display: inline-block;
-  margin-top: -50px;
+  line-height: 150px;
+}
+
+#work_title #subtitle{
+  display: block;
+  margin-top: 20px;
   font-size: 16px;
   line-height: 30px;
   font-weight: 300;
   color: #1a2960;
   letter-spacing: 1px;
+
+}
+
+@keyframes flash {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+.text{
+  opacity: 0;
+}
+
+.cursor{
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: -5px;
+  width: 2px;
+  background: #666;
+  z-index: 10;
+  /*animation*/
+  animation: flash 0.5s none infinite alternate;
 }
 
 /*wkill_btn style*/
