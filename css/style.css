@@ -152,30 +152,37 @@ h1,h2,h3,h4,h5,h6{ line-height: 1; }
 .banner_btn_wrap{
   position: absolute;
   top: calc( 50% - 10px);
-  right: 0;
+  right: 2rem;
   width: 40px;
   height: 100px;
-
 }
 
-.banner_btn_wrap > .banner_btn:nth-of-type(1){
-  width: 3px;
-  height: 50px;
-  background: #666;
-  margin-bottom: 10px;
-  transition: background 1s;
+.banner_btn_wrap > .sun_icon{
+  width: 32px;
+  height: 32px;
+  background-size: cover;
+  background-image: url('../img/icon/sun.png');
+  opacity: .8;
+  margin-bottom: 2rem;
 }
 
-.banner_btn_wrap > .banner_btn:nth-of-type(2){
-  top: 5px;
-  width: 3px;
-  height: 50px;
-  background: #666;
-  transition: background 1s;
+.banner_btn_wrap > .sun_icon:hover{
+  background-image: url('../img/icon/sun_hover.png');
+  transition: .5s;
 }
 
-.banner_btn_wrap > .banner_btn:hover{
-  background: #f1f1f1;
+.banner_btn_wrap > .moon_icon{
+  width: 25px;
+  height: 25px;
+  margin-left: 0.3rem;
+  background-size: cover;
+  background-image: url('../img/icon/moon.png');
+  opacity: .8;
+}
+
+.banner_btn_wrap > .moon_icon:hover{
+  background-image: url('../img/icon/moon_hover.png');
+  transition: .5s;
 }
 
 /*section 부분*/

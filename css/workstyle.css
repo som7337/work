@@ -9,13 +9,18 @@ body{ background: #fff;}
 }
 
 /*work_title style*/
-#work_title{
+.work_title{
   position: relative;
   margin-left: 250px;
   margin-top: 10%;
+  display: none;
 }
 
-#work_title #maintitle{
+.work_title:first-child{
+  display: block;
+}
+
+.work_title .maintitleE{
   font-size: 190px;
   height: 200px;
   font-family: 'EB Garamond', serif;
@@ -24,12 +29,54 @@ body{ background: #fff;}
   color: #1a2960;
 }
 
-#work_title #maintitle h1{
+.work_title .maintitleE h1{
   display: inline-block;
   line-height: 150px;
 }
 
-#work_title #subtitle{
+.work_title .maintitleB{
+  font-size: 190px;
+  height: 200px;
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+  letter-spacing: -3px;
+  color: #1a2960;
+}
+
+.work_title .maintitleB h1{
+  display: inline-block;
+  line-height: 150px;
+}
+
+.work_title .maintitleU{
+  font-size: 190px;
+  height: 200px;
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+  letter-spacing: -3px;
+  color: #1a2960;
+}
+
+.work_title .maintitleU h1{
+  display: inline-block;
+  line-height: 150px;
+}
+
+.work_title .maintitleW{
+  font-size: 190px;
+  height: 200px;
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+  letter-spacing: -3px;
+  color: #1a2960;
+}
+
+.work_title .maintitleW h1{
+  display: inline-block;
+  line-height: 150px;
+}
+
+.work_title .subtitle{
   display: block;
   margin-top: 20px;
   font-size: 16px;
@@ -84,11 +131,22 @@ body{ background: #fff;}
   align-items: center;
   width: 170px;
   height: 70px;
-  background: #1a2960;
+  cursor: pointer;
 }
 
 #skill_btn ul li a{
-  color: #fff;
+  color: #1a2960;
+}
+
+#skill_btn ul li.on{
+background: #1a2960;
+color: #fff;
+}
+
+#skill_btn ul li:hover{
+background: #1a2960;
+color: #fff;
+opacity: .5;
 }
 
 /*area style*/
@@ -102,6 +160,10 @@ body{ background: #fff;}
   width: calc(100% - 250px);
   box-sizing: border-box;
   background-size: cover;
+}
+
+.work_area.B,.work_area.U,.work_area.W{
+  display: none;
 }
 
 .work_area .column{
